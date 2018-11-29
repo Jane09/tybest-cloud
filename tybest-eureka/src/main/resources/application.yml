@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: tybest-eureka
+  security:
+    user:
+      name: admin
+      password: admin
+      roles: admin
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false #close eureka protect mode
+    eviction-interval-timer-in-ms: 1000
+    renewal-threshold-update-interval-ms: 1000
