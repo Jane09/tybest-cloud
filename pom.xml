@@ -12,6 +12,7 @@
         <module>tybest-gateway</module>
         <module>tybest-config</module>
         <module>tybest-eureka</module>
+        <module>tybest-eureka-cluster</module>
     </modules>
 
     <properties>
@@ -85,6 +86,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
+            <version>1.2.51</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
