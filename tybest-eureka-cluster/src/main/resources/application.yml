@@ -1,22 +1,22 @@
----
-spring:
-  profiles: eureka-server1
-server:
-  port: 1111
-eureka:
-  instance:
-    hostname: eureka-server1
-  client:
-    service-url:
-      defaultZone: http://eureka-server2:1112/eureka/
----
-spring:
-  profiles: eureka-server2
-eureka:
-  instance:
-    hostname: eureka-server2
-  client:
-    service-url:
-      defaultZone: http://eureka-server1:1111/eureka/
-server:
-  port: 1112
+#---
+#spring:
+#  profiles: eureka-server1
+#server:
+#  port: 1111
+#eureka:
+#  instance:
+#    hostname: eureka-server1
+#  client:
+#    service-url:
+#      defaultZone: http://eureka-server2:1112/eureka/
+#---
+#spring:
+#  profiles: eureka-server2
+#eureka:
+#  instance:
+#    hostname: eureka-server2
+#  client:
+#    service-url:
+#      defaultZone: http://eureka-server1:1111/eureka/
+#server:
+#  port: 1112
