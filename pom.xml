@@ -11,6 +11,7 @@
     <modules>
         <module>tybest-gateway</module>
         <module>tybest-config</module>
+        <module>tybest-eureka</module>
     </modules>
 
     <properties>
