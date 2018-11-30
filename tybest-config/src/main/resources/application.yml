@@ -15,7 +15,20 @@ spring:
           search-paths: config-repos
           username: zhoujian699@126.com
           password: zq99forever
+eureka-server:
+  hostname: tybest
+  port: 8761
 eureka:
   client:
+    fetch-registry: true
+    register-with-eureka: true
+    registry-fetch-interval-seconds: 1
+    healthcheck.enabled: true
     service-url:
-      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@tybest:8761/eureka/
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka-server.hostname}:${eureka-server.port}/eureka/
+#  instance:
+#    prefer-ip-address: true #在Eureka注册管理界面上显示微服务真是的IP地址
+#    status-page-url-path: ${eureka-server.hostname}:${eureka-server.port}/info
+#    health-check-url-path: ${eureka-server.hostname}:${eureka-server.port}/health
+#    lease-renewal-interval-in-seconds: 1  #租期更新时间间隔（默认30秒）
+#    lease-expiration-duration-in-seconds: 1  #租期到期时间（默认90秒）
