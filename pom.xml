@@ -13,6 +13,7 @@
         <module>tybest-config</module>
         <module>tybest-eureka</module>
         <module>tybest-eureka-cluster</module>
+        <module>config-repos</module>
     </modules>
 
     <properties>

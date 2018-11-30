@@ -1,0 +1,10 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: tybest-config
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:

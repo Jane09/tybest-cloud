@@ -1,0 +1,11 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: tybest-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Jane09/tybest-config
+          search-paths: configs
