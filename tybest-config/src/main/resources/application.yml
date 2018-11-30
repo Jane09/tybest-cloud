@@ -11,7 +11,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Jane09/tybest-cloud
+          uri: https://github.com/Jane09/config-repos
           search-paths: config-repos
           username: zhoujian699@126.com
           password: zq99forever
