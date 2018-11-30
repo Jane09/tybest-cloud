@@ -7,5 +7,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Jane09/tybest-config
+          uri: https://github.com/Jane09/tybest-cloud/config-repos
           search-paths: configs
