@@ -10,7 +10,7 @@ server:
   port: 8761
 eureka:
   instance:
-    hostname: tybest
+    hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
@@ -19,4 +19,4 @@ eureka:
   server:
     enable-self-preservation: false #close eureka protect mode
     eviction-interval-timer-in-ms: 5000
-    renewal-threshold-update-interval-ms: 1000
+    renewal-threshold-update-interval-ms: 5000
