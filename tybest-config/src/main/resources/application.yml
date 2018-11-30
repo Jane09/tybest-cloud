@@ -2,10 +2,20 @@ server:
   port: 8090
 spring:
   application:
-    name: tybest-config
+    name: tybest-config-server
+  security:
+    user:
+      name: admin
+      password: admin
   cloud:
     config:
       server:
         git:
           uri: https://github.com/Jane09/tybest-cloud/config-repos
           search-paths: configs
+          username: zhoujian699@126.com
+          password: zq99forever
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@tybest:8761/eureka/

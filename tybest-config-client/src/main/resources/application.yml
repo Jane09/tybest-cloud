@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: tybest-config
+  security:
+    user:
+      name: admin
+      password: admin
+  cloud:
+    config:
+      uri: http://localhost:8090
+      profile: dev
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761/eureka/

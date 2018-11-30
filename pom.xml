@@ -14,6 +14,7 @@
         <module>tybest-eureka</module>
         <module>tybest-eureka-cluster</module>
         <module>config-repos</module>
+        <module>tybest-config-client</module>
     </modules>
 
     <properties>
