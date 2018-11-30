@@ -9,7 +9,6 @@ spring:
     config:
       uri: http://localhost:8090
       profile: dev
-      label: master
 eureka-server:
   hostname: localhost
   port: 8761
