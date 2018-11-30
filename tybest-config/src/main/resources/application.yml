@@ -12,8 +12,8 @@ spring:
       server:
         git:
           uri: https://github.com/Jane09/config-repos
-#          username: zhoujian699@126.com
-#          password: zq99forever
+          username: zhoujian699@126.com
+          password: zq99forever
 #          search-paths: tybest-*
 eureka-server:
   hostname: localhost
